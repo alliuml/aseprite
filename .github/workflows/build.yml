@@ -52,9 +52,9 @@ jobs:
           -DENABLE_UI=${{ matrix.enable_ui }} \
           -DENABLE_CCACHE=$enable_ccache \
           -DLAF_BACKEND=skia \
-          -DSKIA_DIR=./skia \
-          -DSKIA_LIBRARY_DIR=./skia/out/Release-x64 \
-          -DSKIA_LIBRARY=./skia/out/Release-x64/skia.lib
+          -DSKIA_DIR=./Skia-Windows-Release-x64 \
+          -DSKIA_LIBRARY_DIR=./Skia-Windows-Release-x64/out/Release-x64 \
+          -DSKIA_LIBRARY=./Skia-Windows-Release-x64/out/Release-x64/skia.lib
     - name: Compiling
       shell: bash
       run: |
